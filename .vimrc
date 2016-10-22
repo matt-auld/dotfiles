@@ -42,6 +42,8 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
 
+autocmd FileType gitcommit setlocal spell
+
 let g:syntastic_c_check_header = 1
 let g:syntastic_c_compiler = 'clang'
 set splitright
