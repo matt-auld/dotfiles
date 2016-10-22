@@ -1,0 +1,42 @@
+[general]
+ui = TTY.TTYUI
+accounts = personal
+fsync = False
+pythonfile = ~/.offlineimap.py
+
+[Account personal]
+localrepository = personal-local
+remoterepository = personal-remote
+status_backend = sqlite
+# postsynchook = notmuch new
+synclabels = yes
+# This header is where labels go.  Usually you will be fine
+# with default value (X-Keywords), but in case you want it
+# different, here we go:
+labelsheader = X-Keywords
+
+[Repository personal-local]
+type = Maildir
+localfolders = ~/.mail/gmail.com
+nametrans = lambda folder: {'drafts':  '[Gmail]/Drafts',
+                            'sent':    '[Gmail]/Sent Mail',
+                            }.get(folder, folder)
+
+[Repository personal-remote]
+maxconnections = 1
+type = Gmail
+remoteusereval = keyring.get_password('gmail', 'personal-usr')
+remotepasseval = keyring.get_password('gmail', 'personal-pwd')
+realdelete = no
+nametrans = lambda folder: {'[Gmail]/Drafts':    'drafts',
+                            '[Gmail]/Sent Mail': 'sent',
+                            }.get(folder, folder)
+folderfilter = lambda folder: folder not in ['[Gmail]/Trash',
+                                             '[Gmail]/Important',
+                                             '[Gmail]/Spam',
+					     '[Gmail]/Starred',
+					     'All Mail',
+					     '[Gmail]/All Mail',
+					     '[Gmail]/INBOX',
+					     'INBOX' 
+					    ]

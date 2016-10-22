@@ -1,0 +1,5 @@
+PROJECT=~/gfx
+export PATH=$PROJECT/install/bin:$PATH
+export LD_LIBRARY_PATH=$PROJECT/install/lib:$LD_LIBRARY_PATH
+export PKG_CONFIG_PATH=$PROJECT/install/lib/pkgconfig:$PKG_CONFIG_PATH
+export ACLOCAL_FLAGS="-I $PROJECT/install/share/aclocal $ACLOCAL_FLAG"
