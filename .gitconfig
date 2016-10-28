@@ -16,3 +16,5 @@
 	rs = reset --soft
 	ro = rebase --onto
 	fp = format-patch
+	f = fetch
+	ch = checkout
