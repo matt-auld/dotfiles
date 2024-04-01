@@ -1,0 +1,4 @@
+*-priv*
+.zcompdump
+.zhistory
+.zsh_history
