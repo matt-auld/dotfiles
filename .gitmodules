@@ -1,3 +1,15 @@
 [submodule "zsh/plugins/zsh-bd"]
 	path = zsh/plugins/zsh-bd
 	url = git@github.com:Tarrasch/zsh-bd.git
+[submodule "vim/.vim/pack/plugins/start/vim-linux-coding-style"]
+	path = vim/.vim/pack/plugins/start/vim-linux-coding-style
+	url = git@github.com:vivien/vim-linux-coding-style.git
+[submodule "vim/.vim/pack/plugins/start/fzf.vim"]
+	path = vim/.vim/pack/plugins/start/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "vim/.vim/pack/plugins/start/gruvbox.vim"]
+	path = vim/.vim/pack/plugins/start/gruvbox.vim
+	url = git@github.com:morhetz/gruvbox.git
+[submodule "vim/.vim/pack/plugins/start/YouCompleteMe.vim"]
+	path = vim/.vim/pack/plugins/start/YouCompleteMe.vim
+	url = git@github.com:ycm-core/YouCompleteMe.git
