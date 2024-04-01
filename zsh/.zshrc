@@ -1,6 +1,6 @@
 source $XDG_CONFIG_HOME/aliases
 
-if [ -n "${ZSH_PRIV_PROFILE=+1}" ]; then
+if [ -n "${ZSH_PRIV_PROFILE}" ]; then
 	source $XDG_CONFIG_HOME/aliases-priv
 	source $ZDOTDIR/netenv-priv.zsh
 fi
