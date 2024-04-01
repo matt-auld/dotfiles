@@ -1,0 +1,26 @@
+[include]
+        path = config-priv
+[core]
+        editor = vim
+[color "diff-highlight"]
+        oldNormal = red bold
+        oldHighlight = red bold 52
+        newNormal = green bold
+        newHighlight = green bold 22
+[alias]
+        d = diff
+        c = commit -s -v
+        l = log --color --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset%C(bold)%an%Creset' --abbrev-commit
+        s = status
+        rh = reset --hard
+        rs = reset --soft
+        ro = rebase --onto
+        fp = format-patch
+        f = fetch
+        ch = checkout
+[rerere]
+        enabled = true
+[http]
+        postBuffer = 524288000
+[color]
+        ui = auto
