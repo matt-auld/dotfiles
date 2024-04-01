@@ -1,0 +1,11 @@
+*.swp
+*.o
+*.ko
+*.mod
+*.hdrtest
+*.cmd
+*.o.cmd
+*.a^
+*.fixup_branch
+*.version
+tags
