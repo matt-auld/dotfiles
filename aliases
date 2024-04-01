@@ -1,0 +1,22 @@
+# files
+alias l="ls -lh"
+alias ll="l"
+alias la="ls -la"
+alias v="gvim -v"
+alias sync="rsync -Paz"
+
+# git
+alias gg="git grep -i -n"
+alias gd="git diff --color | diff-so-fancy"
+
+# packages
+alias install="sudo dnf -y install"
+alias update="sudo dnf -y update"
+
+# build
+alias mk="make -j$(getconf _NPROCESSORS_ONLN)"
+alias bmk="bear -- make -j$(getconf _NPROCESSORS_ONLN)"
+alias bloat-o-meter="~/gfx/sources/linux/scripts/bloat-o-meter"
+
+alias s-graphical="sudo systemctl isolate graphical.target"
+alias s-console="sudo systemctl isolate multi-user.target"
