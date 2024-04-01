@@ -3,7 +3,7 @@
 	url = git@github.com:Tarrasch/zsh-bd.git
 [submodule "vim/.vim/pack/plugins/start/vim-linux-coding-style"]
 	path = vim/.vim/pack/plugins/start/vim-linux-coding-style
-	url = git@github.com:vivien/vim-linux-coding-style.git
+	url = git@github.com:gregkh/kernel-coding-style.git
 [submodule "vim/.vim/pack/plugins/start/fzf.vim"]
 	path = vim/.vim/pack/plugins/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
