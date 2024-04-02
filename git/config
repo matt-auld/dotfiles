@@ -9,15 +9,21 @@
         newHighlight = green bold 22
 [alias]
         d = diff
+        a = add
+        ap = add -p
         c = commit -s -v
+        ca = commit --amend
         l = log --color --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset%C(bold)%an%Creset' --abbrev-commit
         s = status
+        sh = show
         rh = reset --hard
         rs = reset --soft
         ro = rebase --onto
+        r = rebase
         fp = format-patch
         f = fetch
         ch = checkout
+        cp = checkout -p
 [rerere]
         enabled = true
 [http]
