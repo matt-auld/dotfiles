@@ -13,3 +13,12 @@
 [submodule "vim/.vim/pack/plugins/start/YouCompleteMe.vim"]
 	path = vim/.vim/pack/plugins/start/YouCompleteMe.vim
 	url = git@github.com:ycm-core/YouCompleteMe.git
+[submodule "vim/.vim/pack/plugins/start/delimitMate"]
+	path = vim/.vim/pack/plugins/start/delimitMate
+	url = git@github.com:Raimondi/delimitMate.git
+[submodule "vim/.vim/pack/plugins/start/vim-clang-format"]
+	path = vim/.vim/pack/plugins/start/vim-clang-format
+	url = git@github.com:rhysd/vim-clang-format.git
+[submodule "vim/.vim/pack/plugins/start/vim-highlightedyank"]
+	path = vim/.vim/pack/plugins/start/vim-highlightedyank
+	url = https://github.com/machakann/vim-highlightedyank.git

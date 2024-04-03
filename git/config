@@ -19,7 +19,7 @@
         rh = reset --hard
         rs = reset --soft
         ro = rebase --onto
-        r = rebase
+        ri = rebase -i
         fp = format-patch
         f = fetch
         ch = checkout

@@ -18,20 +18,19 @@ set titlestring=%f title        "
 
 let mapleader=","       " leader is comma
 
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+map <leader>p :Files<CR>
+map <leader>b :Buffers<CR>
+map <leader>m :Marks<CR>
 
-map ,b :Buffers<CR>
-map ,m :Marks<CR>
-map ,p :Files<CR>
+map <leader>c :YcmCompleter GoToCallers<CR>
+map <leader>g :YcmCompleter GoTo<CR>
+map <leader>t <C-o>
+map <leader>h :YcmCompleter GoToAlternateFile<CR>
 
-map ,c :YcmCompleter GoToCallers<CR>
-map ,r :YcmCompleter RefactorRename 
-nnoremap <C-]> :YcmCompleter GoTo<CR>
-nnoremap <C-t> <C-o> <CR>
-nmap ,h <plug>(YCMHover)
+map <leader>r :YcmCompleter RefactorRename 
+nmap <leader>q <plug>(YCMHover)
+
+map <leader>f :ClangFormat<CR>
 
 nmap j gj
 nmap k gk
@@ -99,7 +98,7 @@ match ExtraWhitespace /\s\+$/
 
 set grepprg=ag\ --nogroup\ --nocolor
 
-set colorcolumn=101
+"set colorcolumn=101
 
 "set tags=tags;/
 
@@ -110,5 +109,9 @@ hi SpellBad cterm=underline
 let g:ycm_clangd_uses_ycmd_caching = 0
 " Use installed clangd, not YCM-bundled clangd which doesn't get updates.
 let g:ycm_clangd_binary_path = exepath("clangd")
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+let g:highlightedyank_highlight_duration = 150
+let g:highlightedyank_highlight_in_visual = 0
 
 set secure

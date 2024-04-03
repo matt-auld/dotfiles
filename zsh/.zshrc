@@ -8,10 +8,16 @@ fi
 bindkey -v
 export KEYTIMEOUT=1
 
+setopt interactivecomments
+
 autoload -U compinit; compinit
 _comp_options+=(globdots)
 setopt MENU_COMPLETE
 zstyle ':completion:*' menu select
+
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
 
 source $ZDOTDIR/fzf.zsh
 source $ZDOTDIR/misc.zsh
