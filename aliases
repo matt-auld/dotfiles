@@ -17,7 +17,7 @@ alias update="sudo dnf -y update"
 
 # build
 alias mk="make -j$(getconf _NPROCESSORS_ONLN)"
-alias bmk="PATH=$HOME/clang-kernel/llvm-18.1.3-x86_64/bin:$PATH bear -- make -j$(getconf _NPROCESSORS_ONLN) LLVM=1"
+alias bmk="PATH=$HOME/clang-kernel/llvm-18.1.3-x86_64/bin:$PATH make -j$(getconf _NPROCESSORS_ONLN) LLVM=1 && ./scripts/clang-tools/gen_compile_commands.py"
 alias bloat-o-meter="~/gfx/sources/linux/scripts/bloat-o-meter"
 alias nja="ninja -C build -t compdb > compile_commands.json && ninja -C build"
 

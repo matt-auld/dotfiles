@@ -18,19 +18,22 @@ set titlestring=%f title        "
 
 let mapleader=","       " leader is comma
 
-map <leader>p :Files<CR>
-map <leader>b :Buffers<CR>
-map <leader>m :Marks<CR>
+nmap <leader>f :Files<CR>
+nmap <leader>b :Buffers<CR>
+nmap <leader>m :Marks<CR>
 
-map <leader>c :YcmCompleter GoToCallers<CR>
-map <leader>g :YcmCompleter GoTo<CR>
-map <leader>t <C-o>
-map <leader>h :YcmCompleter GoToAlternateFile<CR>
+nmap <leader>c :YcmCompleter GoToCallers<CR>
+nmap <leader>g :YcmCompleter GoTo<CR>
+nmap <leader>t <C-o>
+nmap <leader>h :YcmCompleter GoToAlternateFile<CR>
 
 map <leader>r :YcmCompleter RefactorRename 
 nmap <leader>q <plug>(YCMHover)
 
-map <leader>f :ClangFormat<CR>
+xnoremap <leader>= :ClangFormat<CR>
+
+nmap <C-j> <PageDown>
+nmap <C-k> <PageUp>
 
 nmap j gj
 nmap k gk
