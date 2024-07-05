@@ -12,8 +12,8 @@ git_branch_name() {
 init_prompt() {
 
 	setopt prompt_subst
-	PROMPT=' %B%F{#928374}@9¾%f%b %5~'
-	PROMPT+='%B%F{#FF007F}$(git_branch_name)%f '
+	PROMPT=' %B%F{#808080}@9¾%f%b %5~'
+	PROMPT+='%B%F{#e60073}$(git_branch_name)%f '
 	PROMPT+='>%f%b '
 
 	RPROMPT='%B%0(?..%148(?..(%?%)))%b'
