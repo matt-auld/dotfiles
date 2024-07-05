@@ -1,0 +1,61 @@
+theme = "gruvbox_light"
+
+[editor]
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+n = "move_line_down"
+N = "keep_selections"
+k = "search_next"
+K = "search_prev"
+j = "move_next_word_end"
+J = "move_next_long_word_end"
+e = "move_line_up"
+i = "move_char_right"
+l = "insert_mode"
+L = "insert_at_line_start"
+
+E="join_selections"
+"A-E"="join_selections_space"
+I="keep_selections"
+"A-I"="remove_selections"
+
+[keys.select]
+e="extend_line_up"
+n="extend_line_down"
+i="extend_char_right"
+
+l="insert_mode"
+L="insert_at_line_start"
+
+k="extend_next_word_end"
+K="extend_next_long_word_end"
+
+j="search_next"
+J="search_prev"
+
+E="join_selections"
+"A-E"="join_selections_space"
+
+I="keep_selections"
+"A-I"="remove_selections"
+
+[keys.select.g]
+i="extend_to_line_end"
+
+[keys.normal.z]
+n="scroll_down"
+e="scroll_up"
+
+[keys.normal.Z]
+n="scroll_down"
+e="scroll_up"
+
+[keys.normal.g]
+i="goto_line_end"
+l="goto_implementation"
