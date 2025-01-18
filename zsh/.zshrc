@@ -5,6 +5,9 @@ if [ -n "${ZSH_PRIV_PROFILE}" ]; then
 	source $ZDOTDIR/netenv-priv.zsh
 fi
 
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+
 bindkey -v
 export KEYTIMEOUT=1
 
