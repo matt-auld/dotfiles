@@ -20,6 +20,7 @@
         rs = reset --soft
         ro = rebase --onto
         ri = rebase -i
+        rv = remote -v
         fp = format-patch
         f = fetch
         ch = checkout
