@@ -31,3 +31,15 @@
         postBuffer = 524288000
 [color]
         ui = auto
+[fetch]
+	writeCommitGraph = true
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
+[diff]
+	algorithm = histogram
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
