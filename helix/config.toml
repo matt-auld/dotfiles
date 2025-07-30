@@ -19,6 +19,10 @@ e = "move_line_up"
 i = "move_char_right"
 l = "insert_mode"
 L = "insert_at_line_start"
+left = "expand_selection"
+right = "shrink_selection"
+up = "select_prev_sibling"
+down = "select_next_sibling"
 
 E="join_selections"
 "A-E"="join_selections_space"
@@ -56,6 +60,6 @@ e="scroll_up"
 n="scroll_down"
 e="scroll_up"
 
-[keys.normal.g]
-i="goto_line_end"
-l="goto_implementation"
+# [keys.normal.g]
+# i="goto_line_end"
+# l="goto_implementation"
