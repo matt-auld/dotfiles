@@ -8,12 +8,12 @@ run() {
 
 install-kernel() {
         # make DOCBOOKS="" htmldocs
-        make prepare
+        make prepare O=build
         if [ $? -ne 0 ]; then
                 return 1
         fi
 
-        make scripts
+        make scripts O=build
         if [ $? -ne 0 ]; then
                 return 1
         fi
@@ -23,12 +23,12 @@ install-kernel() {
                 return 1
         fi
 
-        sudo make modules_install
+        sudo make modules_install O=build
         if [ $? -ne 0 ]; then
                 return 1
         fi
 
-        sudo make install
+        sudo make install O=build
         if [ $? -ne 0 ]; then
                 return 1
         fi
